@@ -1,2 +1,2 @@
 #!/bin/bash
-find hello -user guillaume -print0 | xargs -0 chown vincent
+find hello -user guillaume -exec chown vincent {} +
